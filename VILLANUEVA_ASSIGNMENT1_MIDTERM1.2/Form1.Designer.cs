@@ -31,9 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtLabexamfinalP = new System.Windows.Forms.MaskedTextBox();
-            this.txtQuizPFinal = new System.Windows.Forms.MaskedTextBox();
-            this.txtLabPfinal = new System.Windows.Forms.MaskedTextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -156,10 +153,6 @@
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtLabexamfinalF = new System.Windows.Forms.MaskedTextBox();
-            this.txtQuizFFinal = new System.Windows.Forms.MaskedTextBox();
-            this.txtLabFfinal = new System.Windows.Forms.MaskedTextBox();
-            this.txtFFINALCLASS = new System.Windows.Forms.MaskedTextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -167,10 +160,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtLabexamfinalM = new System.Windows.Forms.MaskedTextBox();
-            this.txtQuizMFinal = new System.Windows.Forms.MaskedTextBox();
-            this.txtLabMfinal = new System.Windows.Forms.MaskedTextBox();
-            this.txtMFINALCLASS = new System.Windows.Forms.MaskedTextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -196,7 +185,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.Grades = new System.Windows.Forms.Label();
-            this.txtclassp = new System.Windows.Forms.MaskedTextBox();
+            this.txtPFINALCLASS = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.GB6.SuspendLayout();
@@ -254,10 +243,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtclassp);
-            this.groupBox2.Controls.Add(this.txtLabexamfinalP);
-            this.groupBox2.Controls.Add(this.txtQuizPFinal);
-            this.groupBox2.Controls.Add(this.txtLabPfinal);
+            this.groupBox2.Controls.Add(this.txtPFINALCLASS);
             this.groupBox2.Controls.Add(this.label50);
             this.groupBox2.Controls.Add(this.label49);
             this.groupBox2.Controls.Add(this.label48);
@@ -268,30 +254,6 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prelim Final Grades";
-            // 
-            // txtLabexamfinalP
-            // 
-            this.txtLabexamfinalP.Location = new System.Drawing.Point(6, 273);
-            this.txtLabexamfinalP.Name = "txtLabexamfinalP";
-            this.txtLabexamfinalP.ReadOnly = true;
-            this.txtLabexamfinalP.Size = new System.Drawing.Size(88, 22);
-            this.txtLabexamfinalP.TabIndex = 7;
-            // 
-            // txtQuizPFinal
-            // 
-            this.txtQuizPFinal.Location = new System.Drawing.Point(6, 219);
-            this.txtQuizPFinal.Name = "txtQuizPFinal";
-            this.txtQuizPFinal.ReadOnly = true;
-            this.txtQuizPFinal.Size = new System.Drawing.Size(88, 22);
-            this.txtQuizPFinal.TabIndex = 6;
-            // 
-            // txtLabPfinal
-            // 
-            this.txtLabPfinal.Location = new System.Drawing.Point(6, 166);
-            this.txtLabPfinal.Name = "txtLabPfinal";
-            this.txtLabPfinal.ReadOnly = true;
-            this.txtLabPfinal.Size = new System.Drawing.Size(88, 22);
-            this.txtLabPfinal.TabIndex = 5;
             // 
             // label50
             // 
@@ -1545,10 +1507,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.txtLabexamfinalF);
-            this.groupBox5.Controls.Add(this.txtQuizFFinal);
-            this.groupBox5.Controls.Add(this.txtLabFfinal);
-            this.groupBox5.Controls.Add(this.txtFFINALCLASS);
             this.groupBox5.Controls.Add(this.label55);
             this.groupBox5.Controls.Add(this.label56);
             this.groupBox5.Controls.Add(this.label57);
@@ -1560,46 +1518,14 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Finals, Final Grades";
             // 
-            // txtLabexamfinalF
-            // 
-            this.txtLabexamfinalF.Location = new System.Drawing.Point(6, 273);
-            this.txtLabexamfinalF.Name = "txtLabexamfinalF";
-            this.txtLabexamfinalF.ReadOnly = true;
-            this.txtLabexamfinalF.Size = new System.Drawing.Size(88, 22);
-            this.txtLabexamfinalF.TabIndex = 7;
-            // 
-            // txtQuizFFinal
-            // 
-            this.txtQuizFFinal.Location = new System.Drawing.Point(6, 219);
-            this.txtQuizFFinal.Name = "txtQuizFFinal";
-            this.txtQuizFFinal.ReadOnly = true;
-            this.txtQuizFFinal.Size = new System.Drawing.Size(88, 22);
-            this.txtQuizFFinal.TabIndex = 6;
-            // 
-            // txtLabFfinal
-            // 
-            this.txtLabFfinal.Location = new System.Drawing.Point(5, 166);
-            this.txtLabFfinal.Name = "txtLabFfinal";
-            this.txtLabFfinal.ReadOnly = true;
-            this.txtLabFfinal.Size = new System.Drawing.Size(88, 22);
-            this.txtLabFfinal.TabIndex = 5;
-            // 
-            // txtFFINALCLASS
-            // 
-            this.txtFFINALCLASS.Location = new System.Drawing.Point(6, 78);
-            this.txtFFINALCLASS.Name = "txtFFINALCLASS";
-            this.txtFFINALCLASS.ReadOnly = true;
-            this.txtFFINALCLASS.Size = new System.Drawing.Size(88, 22);
-            this.txtFFINALCLASS.TabIndex = 4;
-            // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(10, 119);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(75, 32);
+            this.label55.Size = new System.Drawing.Size(13, 16);
             this.label55.TabIndex = 3;
-            this.label55.Text = "Laboratory \r\nExercise";
+            this.label55.Text = "x";
             // 
             // label56
             // 
@@ -1666,10 +1592,6 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.txtLabexamfinalM);
-            this.groupBox4.Controls.Add(this.txtQuizMFinal);
-            this.groupBox4.Controls.Add(this.txtLabMfinal);
-            this.groupBox4.Controls.Add(this.txtMFINALCLASS);
             this.groupBox4.Controls.Add(this.label51);
             this.groupBox4.Controls.Add(this.label52);
             this.groupBox4.Controls.Add(this.label53);
@@ -1680,38 +1602,6 @@
             this.groupBox4.TabIndex = 15;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Midterm Final Grades";
-            // 
-            // txtLabexamfinalM
-            // 
-            this.txtLabexamfinalM.Location = new System.Drawing.Point(6, 273);
-            this.txtLabexamfinalM.Name = "txtLabexamfinalM";
-            this.txtLabexamfinalM.ReadOnly = true;
-            this.txtLabexamfinalM.Size = new System.Drawing.Size(88, 22);
-            this.txtLabexamfinalM.TabIndex = 7;
-            // 
-            // txtQuizMFinal
-            // 
-            this.txtQuizMFinal.Location = new System.Drawing.Point(6, 219);
-            this.txtQuizMFinal.Name = "txtQuizMFinal";
-            this.txtQuizMFinal.ReadOnly = true;
-            this.txtQuizMFinal.Size = new System.Drawing.Size(88, 22);
-            this.txtQuizMFinal.TabIndex = 6;
-            // 
-            // txtLabMfinal
-            // 
-            this.txtLabMfinal.Location = new System.Drawing.Point(6, 166);
-            this.txtLabMfinal.Name = "txtLabMfinal";
-            this.txtLabMfinal.ReadOnly = true;
-            this.txtLabMfinal.Size = new System.Drawing.Size(88, 22);
-            this.txtLabMfinal.TabIndex = 5;
-            // 
-            // txtMFINALCLASS
-            // 
-            this.txtMFINALCLASS.Location = new System.Drawing.Point(6, 78);
-            this.txtMFINALCLASS.Name = "txtMFINALCLASS";
-            this.txtMFINALCLASS.ReadOnly = true;
-            this.txtMFINALCLASS.Size = new System.Drawing.Size(88, 22);
-            this.txtMFINALCLASS.TabIndex = 4;
             // 
             // label51
             // 
@@ -1972,13 +1862,14 @@
             this.Grades.TabIndex = 0;
             this.Grades.Text = "Grades Computation system";
             // 
-            // txtclassp
+            // txtPFINALCLASS
             // 
-            this.txtclassp.Location = new System.Drawing.Point(6, 81);
-            this.txtclassp.Name = "txtclassp";
-            this.txtclassp.ReadOnly = true;
-            this.txtclassp.Size = new System.Drawing.Size(88, 22);
-            this.txtclassp.TabIndex = 8;
+            this.txtPFINALCLASS.Location = new System.Drawing.Point(21, 78);
+            this.txtPFINALCLASS.Multiline = true;
+            this.txtPFINALCLASS.Name = "txtPFINALCLASS";
+            this.txtPFINALCLASS.Size = new System.Drawing.Size(64, 36);
+            this.txtPFINALCLASS.TabIndex = 4;
+            this.txtPFINALCLASS.TextChanged += new System.EventHandler(this.txtClassperformance_TextChanged);
             // 
             // Form1
             // 
@@ -2190,28 +2081,17 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.MaskedTextBox txtLabexamfinalP;
-        private System.Windows.Forms.MaskedTextBox txtQuizPFinal;
-        private System.Windows.Forms.MaskedTextBox txtLabPfinal;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.MaskedTextBox txtLabexamfinalF;
-        private System.Windows.Forms.MaskedTextBox txtQuizFFinal;
-        private System.Windows.Forms.MaskedTextBox txtLabFfinal;
-        private System.Windows.Forms.MaskedTextBox txtFFINALCLASS;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.MaskedTextBox txtLabexamfinalM;
-        private System.Windows.Forms.MaskedTextBox txtQuizMFinal;
-        private System.Windows.Forms.MaskedTextBox txtLabMfinal;
-        private System.Windows.Forms.MaskedTextBox txtMFINALCLASS;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.MaskedTextBox txtclassp;
+        private System.Windows.Forms.TextBox txtPFINALCLASS;
     }
 }
 

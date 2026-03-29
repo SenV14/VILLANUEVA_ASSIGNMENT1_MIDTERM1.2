@@ -651,5 +651,56 @@ namespace VILLANUEVA_ASSIGNMENT1_MIDTERM1._2
 
 
         }
+
+        private void txtClassperformance_TextChanged(object sender, EventArgs e)
+        {
+            double passign1, passign2, precit1, precit2, psw1, psw2, pfinalclass;
+            double Pmaxscore1, Pmaxscore2, PtotalRecit1, PtotalRecit2, totalpSW1, totalpSW2;
+            //initial scores for prelim Class Performance
+            double.TryParse(txtPassign1.Text, out passign1);
+            double.TryParse(txtPassign2.Text, out passign2);
+            double.TryParse(txtPrecit1.Text, out precit1);
+            double.TryParse(txtPrecit2.Text, out precit2);
+            double.TryParse(txtPsw1.Text, out psw1);
+            double.TryParse(txtPsw2.Text, out psw2);
+            //double tryparse for the max score and total recitation and total seatwork for prelims
+            double.TryParse(txtPtotalscores1.Text, out Pmaxscore1);
+            double.TryParse(txtPtotalscores2.Text, out Pmaxscore2);
+            double.TryParse(txtPtotalRecit1.Text, out PtotalRecit1);
+            double.TryParse(txtPtotalRecit2.Text, out PtotalRecit2);
+            double.TryParse(txttotalpSW1.Text, out totalpSW1);
+            double.TryParse(txttotalpSW2.Text, out totalpSW2);
+            //textbox for the final class performance
+
+            //reset number
+            pfinalclass = 0;
+            double itemCount = 0;
+            //List for for loop
+            List<double> prelimList_ClassPerformance = new List<double> { passign1, passign2, precit1, precit2, psw1, psw2 };
+            List<double> postlimList_ClassPerformance = new List<double> { Pmaxscore1, Pmaxscore2, PtotalRecit1, PtotalRecit2, totalpSW1, totalpSW2 };
+            // use for for loop
+            for (int i = 0; i < prelimList_ClassPerformance.Count; i++)
+            {
+                double score = prelimList_ClassPerformance[i];
+                double maxScore = postlimList_ClassPerformance[i];
+                if (maxScore > 0 && maxScore > score)
+                {
+                    double percentage = (score / maxScore) * 60 + 40;
+                    pfinalclass += percentage;
+                    itemCount++;
+
+                }
+
+            }
+
+            if (itemCount > 0)
+
+            {
+
+                double finalGrade1 = pfinalclass / itemCount;
+                txtPFINALCLASS.Text = finalGrade1.ToString("0.00");
+                txtPFINALCLASS.BackColor = Color.LightGreen;
+            }
+        }
     }
 }
