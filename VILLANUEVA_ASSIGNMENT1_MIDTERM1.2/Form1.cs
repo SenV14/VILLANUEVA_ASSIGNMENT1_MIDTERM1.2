@@ -688,15 +688,11 @@ namespace VILLANUEVA_ASSIGNMENT1_MIDTERM1._2
                     double percentage = (score / maxScore) * 60 + 40;
                     pfinalclass += percentage;
                     itemCount++;
-
                 }
-
             }
-
             if (itemCount > 0)
 
             {
-
                 double finalGrade1 = pfinalclass / itemCount;
                 txtPFINALCLASS.Text = finalGrade1.ToString("0.00");
                 txtPFINALCLASS.BackColor = Color.LightGreen;
