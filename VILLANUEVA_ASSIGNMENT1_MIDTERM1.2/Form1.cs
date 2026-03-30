@@ -652,6 +652,7 @@ namespace VILLANUEVA_ASSIGNMENT1_MIDTERM1._2
                     if(Final_Grade[i] > 0)
                     {
                         double finalGrade = (prelim_final * 0.33) + (midterm_final * 0.33) + (final_final * 0.33);
+                        txtFinalOutput.Font = new Font(txtFinalOutput.Font.FontFamily, 18f);
                         txtFinalOutput.Text = finalGrade.ToString("0.00");
                         txtFinalOutput.BackColor = Color.LightGreen;
                     }
