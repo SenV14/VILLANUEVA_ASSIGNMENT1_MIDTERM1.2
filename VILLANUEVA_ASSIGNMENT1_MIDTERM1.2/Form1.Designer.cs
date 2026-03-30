@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtPFINALCLASS = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -185,7 +186,20 @@
             this.label25 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.Grades = new System.Windows.Forms.Label();
-            this.txtPFINALCLASS = new System.Windows.Forms.TextBox();
+            this.txtLABMAXP = new System.Windows.Forms.TextBox();
+            this.txtQuizMaxP = new System.Windows.Forms.TextBox();
+            this.txtLabexammaxP = new System.Windows.Forms.TextBox();
+            this.txtMFINALCLASS = new System.Windows.Forms.TextBox();
+            this.txtLABMAXM = new System.Windows.Forms.TextBox();
+            this.txtQuizMaxM = new System.Windows.Forms.TextBox();
+            this.txtLabexammaxM = new System.Windows.Forms.TextBox();
+            this.txtQuizMaxF = new System.Windows.Forms.TextBox();
+            this.txtFFINALCLASS = new System.Windows.Forms.TextBox();
+            this.txtLABMAXF = new System.Windows.Forms.TextBox();
+            this.txtprojectMaxF = new System.Windows.Forms.TextBox();
+            this.btnPmax = new System.Windows.Forms.Button();
+            this.btnMMAX = new System.Windows.Forms.Button();
+            this.btnFMAX = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.GB6.SuspendLayout();
@@ -243,6 +257,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnPmax);
+            this.groupBox2.Controls.Add(this.txtLabexammaxP);
+            this.groupBox2.Controls.Add(this.txtQuizMaxP);
+            this.groupBox2.Controls.Add(this.txtLABMAXP);
             this.groupBox2.Controls.Add(this.txtPFINALCLASS);
             this.groupBox2.Controls.Add(this.label50);
             this.groupBox2.Controls.Add(this.label49);
@@ -254,6 +272,16 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Prelim Final Grades";
+            // 
+            // txtPFINALCLASS
+            // 
+            this.txtPFINALCLASS.Location = new System.Drawing.Point(16, 78);
+            this.txtPFINALCLASS.Multiline = true;
+            this.txtPFINALCLASS.Name = "txtPFINALCLASS";
+            this.txtPFINALCLASS.ReadOnly = true;
+            this.txtPFINALCLASS.Size = new System.Drawing.Size(64, 36);
+            this.txtPFINALCLASS.TabIndex = 4;
+            this.txtPFINALCLASS.TextChanged += new System.EventHandler(this.txtClassperformance_TextChanged);
             // 
             // label50
             // 
@@ -1449,7 +1477,7 @@
             // 
             // txtfFexam
             // 
-            this.txtfFexam.Location = new System.Drawing.Point(6, 25);
+            this.txtfFexam.Location = new System.Drawing.Point(5, 25);
             this.txtfFexam.Multiline = true;
             this.txtfFexam.Name = "txtfFexam";
             this.txtfFexam.Size = new System.Drawing.Size(219, 32);
@@ -1507,6 +1535,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btnFMAX);
+            this.groupBox5.Controls.Add(this.txtprojectMaxF);
+            this.groupBox5.Controls.Add(this.txtLABMAXF);
+            this.groupBox5.Controls.Add(this.txtFFINALCLASS);
+            this.groupBox5.Controls.Add(this.txtQuizMaxF);
             this.groupBox5.Controls.Add(this.label55);
             this.groupBox5.Controls.Add(this.label56);
             this.groupBox5.Controls.Add(this.label57);
@@ -1523,9 +1556,9 @@
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(10, 119);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(13, 16);
+            this.label55.Size = new System.Drawing.Size(75, 32);
             this.label55.TabIndex = 3;
-            this.label55.Text = "x";
+            this.label55.Text = "Laboratory \r\nExercise";
             // 
             // label56
             // 
@@ -1541,9 +1574,9 @@
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(13, 254);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(74, 16);
+            this.label57.Size = new System.Drawing.Size(49, 16);
             this.label57.TabIndex = 1;
-            this.label57.Text = "Lab Exams";
+            this.label57.Text = "Project";
             // 
             // label58
             // 
@@ -1592,6 +1625,11 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btnMMAX);
+            this.groupBox4.Controls.Add(this.txtLabexammaxM);
+            this.groupBox4.Controls.Add(this.txtQuizMaxM);
+            this.groupBox4.Controls.Add(this.txtLABMAXM);
+            this.groupBox4.Controls.Add(this.txtMFINALCLASS);
             this.groupBox4.Controls.Add(this.label51);
             this.groupBox4.Controls.Add(this.label52);
             this.groupBox4.Controls.Add(this.label53);
@@ -1862,14 +1900,127 @@
             this.Grades.TabIndex = 0;
             this.Grades.Text = "Grades Computation system";
             // 
-            // txtPFINALCLASS
+            // txtLABMAXP
             // 
-            this.txtPFINALCLASS.Location = new System.Drawing.Point(21, 78);
-            this.txtPFINALCLASS.Multiline = true;
-            this.txtPFINALCLASS.Name = "txtPFINALCLASS";
-            this.txtPFINALCLASS.Size = new System.Drawing.Size(64, 36);
-            this.txtPFINALCLASS.TabIndex = 4;
-            this.txtPFINALCLASS.TextChanged += new System.EventHandler(this.txtClassperformance_TextChanged);
+            this.txtLABMAXP.Location = new System.Drawing.Point(16, 157);
+            this.txtLABMAXP.Multiline = true;
+            this.txtLABMAXP.Name = "txtLABMAXP";
+            this.txtLABMAXP.ReadOnly = true;
+            this.txtLABMAXP.Size = new System.Drawing.Size(64, 36);
+            this.txtLABMAXP.TabIndex = 5;
+            // 
+            // txtQuizMaxP
+            // 
+            this.txtQuizMaxP.Location = new System.Drawing.Point(16, 215);
+            this.txtQuizMaxP.Multiline = true;
+            this.txtQuizMaxP.Name = "txtQuizMaxP";
+            this.txtQuizMaxP.ReadOnly = true;
+            this.txtQuizMaxP.Size = new System.Drawing.Size(64, 36);
+            this.txtQuizMaxP.TabIndex = 6;
+            this.txtQuizMaxP.TextChanged += new System.EventHandler(this.txtQuizMaxP_TextChanged);
+            // 
+            // txtLabexammaxP
+            // 
+            this.txtLabexammaxP.Location = new System.Drawing.Point(16, 278);
+            this.txtLabexammaxP.Multiline = true;
+            this.txtLabexammaxP.Name = "txtLabexammaxP";
+            this.txtLabexammaxP.ReadOnly = true;
+            this.txtLabexammaxP.Size = new System.Drawing.Size(64, 36);
+            this.txtLabexammaxP.TabIndex = 7;
+            // 
+            // txtMFINALCLASS
+            // 
+            this.txtMFINALCLASS.Location = new System.Drawing.Point(13, 78);
+            this.txtMFINALCLASS.Multiline = true;
+            this.txtMFINALCLASS.Name = "txtMFINALCLASS";
+            this.txtMFINALCLASS.Size = new System.Drawing.Size(64, 36);
+            this.txtMFINALCLASS.TabIndex = 5;
+            // 
+            // txtLABMAXM
+            // 
+            this.txtLABMAXM.Location = new System.Drawing.Point(13, 154);
+            this.txtLABMAXM.Multiline = true;
+            this.txtLABMAXM.Name = "txtLABMAXM";
+            this.txtLABMAXM.Size = new System.Drawing.Size(64, 36);
+            this.txtLABMAXM.TabIndex = 6;
+            // 
+            // txtQuizMaxM
+            // 
+            this.txtQuizMaxM.Location = new System.Drawing.Point(13, 219);
+            this.txtQuizMaxM.Multiline = true;
+            this.txtQuizMaxM.Name = "txtQuizMaxM";
+            this.txtQuizMaxM.Size = new System.Drawing.Size(64, 36);
+            this.txtQuizMaxM.TabIndex = 7;
+            // 
+            // txtLabexammaxM
+            // 
+            this.txtLabexammaxM.Location = new System.Drawing.Point(13, 278);
+            this.txtLabexammaxM.Multiline = true;
+            this.txtLabexammaxM.Name = "txtLabexammaxM";
+            this.txtLabexammaxM.Size = new System.Drawing.Size(64, 36);
+            this.txtLabexammaxM.TabIndex = 8;
+            // 
+            // txtQuizMaxF
+            // 
+            this.txtQuizMaxF.Location = new System.Drawing.Point(13, 213);
+            this.txtQuizMaxF.Multiline = true;
+            this.txtQuizMaxF.Name = "txtQuizMaxF";
+            this.txtQuizMaxF.Size = new System.Drawing.Size(64, 36);
+            this.txtQuizMaxF.TabIndex = 5;
+            // 
+            // txtFFINALCLASS
+            // 
+            this.txtFFINALCLASS.Location = new System.Drawing.Point(13, 78);
+            this.txtFFINALCLASS.Multiline = true;
+            this.txtFFINALCLASS.Name = "txtFFINALCLASS";
+            this.txtFFINALCLASS.Size = new System.Drawing.Size(64, 36);
+            this.txtFFINALCLASS.TabIndex = 5;
+            // 
+            // txtLABMAXF
+            // 
+            this.txtLABMAXF.Location = new System.Drawing.Point(13, 154);
+            this.txtLABMAXF.Multiline = true;
+            this.txtLABMAXF.Name = "txtLABMAXF";
+            this.txtLABMAXF.Size = new System.Drawing.Size(64, 36);
+            this.txtLABMAXF.TabIndex = 6;
+            // 
+            // txtprojectMaxF
+            // 
+            this.txtprojectMaxF.Location = new System.Drawing.Point(12, 272);
+            this.txtprojectMaxF.Multiline = true;
+            this.txtprojectMaxF.Name = "txtprojectMaxF";
+            this.txtprojectMaxF.Size = new System.Drawing.Size(64, 36);
+            this.txtprojectMaxF.TabIndex = 7;
+            // 
+            // btnPmax
+            // 
+            this.btnPmax.Location = new System.Drawing.Point(16, 349);
+            this.btnPmax.Name = "btnPmax";
+            this.btnPmax.Size = new System.Drawing.Size(75, 61);
+            this.btnPmax.TabIndex = 8;
+            this.btnPmax.Text = "CALCULATE";
+            this.btnPmax.UseVisualStyleBackColor = true;
+            this.btnPmax.Click += new System.EventHandler(this.btnPmax_Click);
+            // 
+            // btnMMAX
+            // 
+            this.btnMMAX.Location = new System.Drawing.Point(10, 340);
+            this.btnMMAX.Name = "btnMMAX";
+            this.btnMMAX.Size = new System.Drawing.Size(75, 61);
+            this.btnMMAX.TabIndex = 9;
+            this.btnMMAX.Text = "CALCULATE";
+            this.btnMMAX.UseVisualStyleBackColor = true;
+            this.btnMMAX.Click += new System.EventHandler(this.btnMMAX_Click);
+            // 
+            // btnFMAX
+            // 
+            this.btnFMAX.Location = new System.Drawing.Point(12, 349);
+            this.btnFMAX.Name = "btnFMAX";
+            this.btnFMAX.Size = new System.Drawing.Size(75, 61);
+            this.btnFMAX.TabIndex = 10;
+            this.btnFMAX.Text = "CALCULATE";
+            this.btnFMAX.UseVisualStyleBackColor = true;
+            this.btnFMAX.Click += new System.EventHandler(this.btnFMAX_Click);
             // 
             // Form1
             // 
@@ -2092,6 +2243,20 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.TextBox txtPFINALCLASS;
+        private System.Windows.Forms.TextBox txtLabexammaxP;
+        private System.Windows.Forms.TextBox txtQuizMaxP;
+        private System.Windows.Forms.TextBox txtLABMAXP;
+        private System.Windows.Forms.TextBox txtprojectMaxF;
+        private System.Windows.Forms.TextBox txtLABMAXF;
+        private System.Windows.Forms.TextBox txtFFINALCLASS;
+        private System.Windows.Forms.TextBox txtQuizMaxF;
+        private System.Windows.Forms.TextBox txtLabexammaxM;
+        private System.Windows.Forms.TextBox txtQuizMaxM;
+        private System.Windows.Forms.TextBox txtLABMAXM;
+        private System.Windows.Forms.TextBox txtMFINALCLASS;
+        private System.Windows.Forms.Button btnPmax;
+        private System.Windows.Forms.Button btnFMAX;
+        private System.Windows.Forms.Button btnMMAX;
     }
 }
 
